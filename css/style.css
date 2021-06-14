@@ -2,73 +2,126 @@ body {
     /* background-color: aliceblue; */
     font-family: "Roboto", serif;
     min-height: 100vh;
+
 }
 
 #container{
-    width: 100%;
+    width: 90%;
     background-color: rgb(54, 54, 54);
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    background-image: url("../ressources/dalaran.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+#main{
+
+    display: flex;
+    flex-direction: row;
+    width: 100%; 
+    max-width: 80%;
+    margin: auto;
+
 }
 
 .header{
+
     display: flex;
+    background-image: url("../ressources/banniere3.jpg");
+    background-repeat: no-repeat;
     background-color: rgb(85, 85, 172);
-    flex-wrap: wrap;
     text-align: center;
-    align-content: center;
     justify-content: center;
-    flex-direction: column;
+    align-items: center;
     border: 2px solid black;
     width: auto;
-    height: 10vh;
+    height: 20vh;
     font-size: 3em;
 }
 
 .side_news{
-    display: flex;
-    justify-content: flex-end;
+    display: 1;
+    border: 20px solid rgb(255, 0, 0);
+    background-color: white;
+
+
 }
 
 .side_news_1, .side_news_2, .side_news_3{
 
-    width: 30%;
-    justify-content: flex-end;
-    background-color: rgb(255, 247, 231);
-    margin: 2em 0.5em;
+    max-width: 100%;
+    background-color: rgb(255, 254, 251);
+    margin: 2em 10em;
     padding: 1em 0.5em;
     border: 2px solid black;
+
 }
 
+
+h2{
+    font-size: 0.9em;
+    text-align: center;
+    background-color: rgb(66, 180, 66);
+    width: 5%;
+    border: solid 2px black;
+    border-radius: 1em;
+    margin: 0.5em 12.6em;
+    padding: 0.3em;
+}
+
+.icefall{
+    background-color: rgb(110, 214, 214);
+}
 
 h3{
     font-size: 2em;
     font-weight: bold;
-    color: white;
-    margin: 1em 0.5em;
+    color: rgb(0, 0, 0);
+    margin: 1em 0em;
+    padding: 0.5em 0.5em;
     text-align: center;
+    line-height: 1.3em;
 }
 
 h4{
+    font-size: 1.4em;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgb(85, 85, 172);
+    width: 100%;
+}
+
+h5{
     padding: 0.5em 0em;
     font-weight: bold;
+    background-color: rgb(235, 177, 20);
+    text-align: center;
 }
 
 .down{
     display: block;
-    width: 50em;
     border: 2px solid black;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 80%;
 
 }
 
+.down-desc{
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    padding: 0.8em;
+    position: relative;
+    top : -42px; left: 4.9em;
+    width: 77.2%;
+    text-align: center;
+}
+
 .interview{
-    width: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+
+    flex: 1;
     background-color: white;
     
 }
@@ -78,14 +131,17 @@ h4{
 }
 
 .question{
-    margin: 2.5em 0em 1.2em;
+    margin: 2.5em 1em 1.2em;
     font-weight: bold;
     font-size: 1.2em;
+    color: rgb(26, 26, 104);
+
 }
 
 .reponse{
     text-justify: auto;
     line-height: 1.3em;
+    margin: 0em 1em;
 
 }
 
@@ -93,10 +149,29 @@ h4{
     font-style: italic;
 }
 
-.bold{
+.bold, strong{
     font-weight: bold;
 }
 
 p{
-    margin: 1.5em 0em;
+    margin: 1.5em 1em;
+    line-height: 1.3em;
+    text-justify: auto;
+}
+
+.small_leap{
+    margin: 0.6em 1em;
+    line-height: 1.3em;
+    text-justify: auto;
+}
+
+.try{
+    display: block;
+    width: 50em;
+}
+
+.down_night{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
